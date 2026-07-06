@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#e2edf4;
+    overflow-x:hidden;
+}
+
+.background-circle{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:240px;
+    background:#05adf0;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    z-index:-1;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:80px 20px;
+}
+
+.card{
+    width:420px;
+    background:#22b5ef;
+    border-radius:30px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    position:relative;
+}
+
+.profile{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #ffffff;
+    margin:-120px auto 20px;
+    display:block;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+h1{
+    color:#fbfbfb;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+h3{
+    color:#000000;
+    margin-bottom:20px;
+    font-weight:400;
+}
+
+p{
+    color:#080808;
+    line-height:28px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.buttons a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-decoration:none;
+    background:#ffffff;
+    color:#060606;
+    padding:16px 20px;
+    border-radius:15px;
+    font-size:18px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+
+.buttons a:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.buttons span{
+    flex:1;
+    text-align:center;
+    font-size:19px;
+    font-weight:700;
+    letter-spacing:0.3px;
+}
+
+.buttons i{
+    font-size:22px;
+}
+
+/* ألوان الأيقونات */
+
+.fa-whatsapp{
+    color:#25D366;
+}
+
+.fa-instagram{
+    color:#E4405F;
+}
+
+.fa-facebook-f{
+    color:#1877F2;
+}
+
+.fa-tiktok{
+    color:#000000;
+}
+
+.fa-phone{
+    color:#0d6efd;
+}
+
+.fa-angle-left{
+    color:#999;
+}
+
+@media(max-width:500px){
+
+    .container{
+        padding:60px 15px;
+    }
+
+    .card{
+        width:100%;
+        padding:30px 20px;
+    }
+
+    .profile{
+        width:140px;
+        height:140px;
+        margin-top:-90px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h3{
+        font-size:18px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .buttons a{
+        font-size:17px;
+        padding:15px;
+    }
+
+}
